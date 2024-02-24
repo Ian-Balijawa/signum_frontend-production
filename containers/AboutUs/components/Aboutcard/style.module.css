@@ -1,0 +1,65 @@
+.cardcontainer {
+  display: flex;
+  width: 90vw;
+  /* border: 1px solid yellow; */
+  /* flex-wrap: wrap; */
+  /* white-space: nowrap; */
+}
+
+.card {
+  height: 450px;
+  width: 400px !important;
+  background: #950019;
+  margin: 2rem !important;
+  /* border: 2px solid green; */
+  /* position: relative; */
+  /* margin: 10px; */
+}
+
+.card > article {
+  /* position: absolute; */
+  /* bottom: 3%; */
+  color: #ffffff;
+  padding: 1.5rem;
+}
+
+.card > article > h2 {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.card > article > p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /* .card {
+    height: 450px;
+    width: 450px;
+  } */
+  .card > article {
+    /* position: absolute; */
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+    /* width: 600px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardcontainer {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .card {
+    width: 300px;
+    /* margin-left: -2rem; */
+    padding-left: 1.2rem;
+  }
+  .card > article > h2 {
+    margin-bottom: 0.9rem;
+  }
+}

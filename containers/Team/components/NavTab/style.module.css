@@ -1,0 +1,138 @@
+.tabContainer {
+  max-width: 98%;
+  padding-left: 5rem;
+  /* background: #f5f5f5;
+  backdrop-filter: blur(2px); */
+}
+
+.active {
+  border: none;
+  border-bottom: 4px solid #950019;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #950019;
+}
+
+.inactive {
+  border: none;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+
+.line {
+  border-bottom: 1px solid #bebebe;
+  max-width: 90.5%;
+  margin: 3rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  padding-left: 5rem;
+}
+
+.gallery > div img {
+  padding: 0px;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+
+.gallery div p {
+  /* margin-left: 2rem; */
+  font-size: var(--fontsize_publication_text);
+}
+
+.gallery div p:nth-child(1) {
+  color: #666666;
+  /* border: 1px solid red; */
+}
+.gallery div p:nth-child(1):hover {
+  color: #000;
+}
+
+.gallery div p:nth-child(3) {
+  color: #950019;
+  padding-bottom: 2.5rem;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .buttonContainer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.buttonContainer button {
+  border: none;
+  padding-bottom: 0.4rem;
+  color: #2e3a59;
+  background: #f5f5f5;
+  backdrop-filter: blur(2px);
+  font-size: 1.5rem;
+  margin: 1rem;
+  border-bottom: 2px solid #950019;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+} */
+
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+  .gallery {
+    padding-left: 5rem;
+    gap: 4rem;
+  }
+  .active,
+  .inactive {
+    padding: 15px 22px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabContainer {
+    max-width: 100%;
+    padding-left: 0rem;
+    /* margin-left: -0.8rem; */
+  }
+  .gallery {
+    display: block;
+    padding-left: 0rem;
+    /* border: 1px solid red; */
+  }
+  .gallery div p {
+    /* margin-left: 2rem; */
+    font-size: var(--fontsize_about_text);
+    padding: 0.2rem;
+  }
+  .line {
+    border-bottom: 1px solid #bebebe;
+    max-width: 100%;
+    margin: 2rem;
+    /* white-space: nowrap; */
+  }
+  .active,
+  .inactive {
+    padding: 0px 22px 10px 0px;
+    font-size: 16px;
+  }
+  .gallery div p:nth-child(3) {
+    color: #950019;
+    padding-bottom: 1.2rem;
+  }
+}

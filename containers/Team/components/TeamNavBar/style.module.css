@@ -1,0 +1,40 @@
+.nav {
+  /* min-height: 54vh; */
+  min-height: 28vh;
+  background: var(--primary50);
+  /* padding: 4rem; */
+}
+
+.shortDesc {
+  display: none;
+}
+
+.nav > button {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+  border: none;
+  font-size: 35px;
+  background: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .nav {
+    min-height: 10vh;
+    background: var(--primary50);
+  }
+  .shortDesc {
+    display: block;
+    padding-right: 2rem;
+    margin-top: -2rem;
+  }
+
+  .navLogoContainer {
+    margin-left: 3rem;
+  }
+
+  .longDesc {
+    display: none;
+  }
+}

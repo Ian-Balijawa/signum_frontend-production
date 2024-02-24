@@ -1,0 +1,40 @@
+.active {
+  border: none;
+  border-bottom: 4px solid #950019;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #950019;
+  /* margin-left: 2rem; */
+}
+
+.inactive {
+  border: none;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  /* margin-left: 2rem; */
+}
+
+.line {
+  border-bottom: 1px solid #bebebe;
+  max-width: 90.5%;
+  margin-left: 15rem;
+  margin: 3rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 0.24fr);
+  grid-gap: 10px;
+  /* margin: 3rem; */
+  margin-left: 6rem;
+  /* border: 1px solid black; */
+}

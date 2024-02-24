@@ -1,0 +1,26 @@
+.horizontalslider {
+  display: block;
+  width: 50%;
+  overflow-x: scroll;
+  margin-top: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* .horizontalslider::-webkit-scrollbar {
+} */
+
+.sliderCase {
+  display: block;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.item img {
+  width: 330px;
+  height: 300px;
+}

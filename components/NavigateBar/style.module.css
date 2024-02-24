@@ -1,0 +1,91 @@
+.nav {
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem 0rem 7rem;
+  color: #950019;
+  background-color: #fff;
+}
+
+.menulist {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav_links {
+  padding-left: 3rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.hamburgerMenuContainer {
+  margin-top: -3.5rem;
+}
+
+.overlayMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-color: #fff;
+}
+
+.closeButtonCase {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  position: absolute;
+}
+
+.desktopMenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopMenu {
+    display: flex;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .nav {
+    padding: 0rem 2rem 0rem 4rem;
+  }
+  .nav_links {
+    padding-left: 2.1rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .nav_links {
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .menuicon {
+    /* border: 1px solid black; */
+    width: 38px;
+    height: 38px;
+  }
+}

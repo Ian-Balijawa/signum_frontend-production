@@ -1,0 +1,101 @@
+.outer_container {
+  display: flex;
+  justify-content: center;
+  /* max-width: 100%; */
+}
+
+.horizontalslider {
+  /* display: block; */
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sliderCase {
+  display: block;
+}
+
+.item {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.outer_container {
+  padding: 0rem;
+  font-family: "Museo Sans", sans-serif;
+  font-weight: 600;
+  /* border: 1px solid black; */
+}
+
+.innerContainer {
+  margin: 2rem;
+  border: 1px solid black;
+  margin-left: 2rem;
+}
+
+.headingContainer > article > h4 {
+  font-size: var(--fontsize_publication_title);
+}
+
+.innerContainer > article > span {
+  padding-left: 6rem;
+  opacity: 0.6;
+  font-size: var(--fontsize_small);
+}
+
+.innerContainer > hr {
+  /* max-width: 90%; */
+  margin-top: 0.5rem;
+  font-weight: normal;
+  color: "#555555";
+  opacity: 0.6;
+}
+
+.headingContainer {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.headingContainer article:nth-child(2) {
+  flex: 0 0 170px;
+  margin-top: 0.35rem;
+}
+
+.text {
+  font-weight: 400;
+  font-size: var(--fontsize_medium);
+  line-height: 40px;
+  padding-right: 4rem;
+  letter-spacing: 0.025rem;
+  /* or 114% */
+}
+
+.subHeading {
+  font-family: "Museo Sans", sans-serif;
+  font-size: var(--fontsize_medium);
+  line-height: 28px;
+  color: #555555;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+/* media query for laptop sizes */
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+  .innerContainer > article > span {
+    padding-left: 0rem;
+    font-size: var(--fontsize_small);
+  }
+
+  .text {
+    padding-right: 0rem;
+  }
+}

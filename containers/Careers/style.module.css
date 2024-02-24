@@ -1,0 +1,39 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  /* margin: 0 auto; */
+  padding: 2rem 4rem 3rem 4rem;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+  /* .cardContainer {
+    padding: 2rem 3rem 3rem 8rem;
+    gap: 5rem;
+  } */
+}
+
+/* media query for tablets sizes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cardContainer {
+    gap: 1rem;
+    padding: 2rem 4rem 3rem 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .careerContainer article h1 {
+    font-size: 83px;
+  }
+  .careerContainer article p {
+    font-size: 15px;
+    text-align: center;
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    padding: 2rem 1rem 3rem 1rem;
+  }
+}

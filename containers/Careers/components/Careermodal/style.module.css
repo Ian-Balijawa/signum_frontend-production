@@ -1,0 +1,108 @@
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+  background-color: #00000010;
+  /* opacity: 0.6; */
+}
+
+.modal {
+  width: 740px;
+  height: 570px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border-radius: 13px;
+  border: 1px solid grey;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  color: #950019;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.modaltext {
+  color: #666666;
+  font-size: 1.25rem;
+}
+
+.rolelist {
+  color: #666666;
+  font-size: 1.25rem;
+}
+
+.date {
+  margin-right: 9rem;
+}
+
+.button {
+  border: none;
+  width: 200px;
+  height: 4vh;
+  background: #950019;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* media query for laptops sizes */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .modal {
+    width: 700px;
+    height: 520px;
+    overflow-y: scroll;
+  }
+  .modaltext {
+    font-size: 1.15rem;
+  }
+  .rolelist {
+    font-size: 1.15rem;
+  }
+  .button {
+    height: 6.4vh;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal {
+    width: 400px;
+    height: 620px;
+    overflow-y: scroll;
+  }
+  .modaltext {
+    color: #666666;
+    font-size: 1.15rem;
+  }
+  .date {
+    white-space: nowrap;
+    padding-top: 1.5rem;
+  }
+
+  .rolelist {
+    font-size: 1.05rem;
+  }
+
+  .modal article button {
+    margin-top: 1rem;
+  }
+  .button {
+    border: none;
+    width: 190px;
+    height: 5.6vh;
+  }
+}

@@ -1,0 +1,9 @@
+.image_collage_container {
+  display: flex;
+  height: 300px;
+  /* width: 100%; */
+  align-items: center;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* overflow: clip; */
+}

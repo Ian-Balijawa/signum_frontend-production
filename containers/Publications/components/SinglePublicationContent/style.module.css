@@ -1,0 +1,146 @@
+.publicOuterCase {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 5rem 2rem 5rem;
+  gap: 3rem;
+  /* margin: 2rem; */
+}
+
+.publicationContainer {
+  max-width: 70%;
+  flex: 2;
+}
+
+.publicationContainer div span {
+  font-weight: 600;
+  font-size: 18.9716px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.64;
+}
+
+.publicationContainer div hr {
+  margin-top: 1.8rem;
+}
+
+.subHeading {
+  font-size: 44.6354px;
+  line-height: 54px;
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 24.1392px;
+  line-height: 24px;
+  color: #555555;
+  margin-bottom: 1.2rem;
+}
+
+.longtext {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #666666;
+  /* border: 1px solid red; */
+}
+
+.longtext p:nth-child(1) {
+  font-weight: 600;
+  font-size: 21.3349px;
+  line-height: 26px;
+}
+
+.longtext p:not(:first-child) {
+  font-weight: 300;
+  font-size: 21.3349px;
+  line-height: 26px;
+}
+
+.smallcardContainer {
+  flex: 1;
+  /* border: 1px solid black; */
+  margin-top: 19rem;
+}
+
+.smallcard {
+  /* border: 1px solid red; */
+  max-width: 100%;
+  color: #000000;
+}
+
+.smallcard > div hr {
+  margin-top: 0.4rem;
+}
+
+.smallcard div p:nth-child(3) {
+  display: none;
+}
+
+.smallcard > div article span {
+  /* border: 1px solid red; */
+  font-weight: 600;
+}
+
+.smallcard div p:nth-child(4) {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.smallcardContainer h2 {
+  font-weight: 600;
+  color: #950019;
+  font-size: 2.3rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+}
+
+@media screen and (max-width: 768px) {
+  .publicationContainer {
+    margin: 0rem;
+    max-width: 100%;
+  }
+  .publicOuterCase {
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  /* .text {
+    font-size: 18px;
+  } */
+  .longtext p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .longtext p:not(:first-child) {
+    font-size: 18px;
+  }
+  /* .longtext p:not(:first-child) {
+    font-size: 19px;
+  } */
+  .subHeading {
+    font-size: 35px;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .smallcardContainer {
+    /* border: 1px solid black; */
+    padding-right: 0rem;
+    margin-top: 0rem;
+  }
+  .smallcardContainer h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .smallcard {
+    max-width: 100%;
+    padding-top: 1.5rem;
+    margin-left: 0rem;
+  }
+  .smallcard > div article span {
+    margin-top: 0.6rem;
+  }
+}

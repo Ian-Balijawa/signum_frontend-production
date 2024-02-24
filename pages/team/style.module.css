@@ -1,0 +1,53 @@
+.nextPage {
+  min-height: 48vh;
+  background: #979797;
+  color: #fff;
+  padding: 8rem;
+}
+
+.nextPage h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.nextPage hr {
+  max-width: 90%;
+  border: 1px solid #ffffff;
+  margin-top: 1.8rem;
+}
+
+.nextPage article a {
+  font-size: 1.8rem;
+}
+
+.nextPage button {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 16%;
+  font-size: 4rem;
+  color: #ffffff;
+  border: none;
+  background: none;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .nextPage {
+    min-height: 40vh;
+    padding: 2rem;
+  }
+  .nextPage h3 {
+    font-weight: 600;
+    font-size: 2.6rem;
+  }
+  .nextPage article a {
+    font-size: 1.5rem;
+  }
+  .nextPage hr {
+    max-width: 100%;
+  }
+  .nextPage button {
+    font-size: 2.2rem;
+    right: 5%;
+  }
+}

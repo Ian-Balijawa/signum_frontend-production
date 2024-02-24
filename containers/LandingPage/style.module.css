@@ -1,0 +1,329 @@
+.overviewContainer {
+  display: flex;
+  min-height: 60vh;
+  padding: 3rem 3rem 3rem 6.5rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardLink {
+  display: block;
+  width: 50%;
+}
+
+.overviewIntro {
+  flex: 2;
+  max-width: 25%;
+}
+
+.viewCase {
+  max-width: 25%;
+  margin-right: 0px;
+}
+.overview_cards {
+  flex: 6;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60%;
+}
+
+.image_case {
+  /* flex-direction: column; */
+  flex: 6;
+  max-width: 30%;
+  /* border: 1px solid red; */
+}
+
+.practice_container {
+  background: #e5e5e5;
+  min-height: 60vh;
+  padding: 0rem 3rem 3rem 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* gap: 15rem; */
+}
+
+.practiceIntro {
+  flex: 2;
+  max-width: 27%;
+}
+
+.practice_cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 6;
+  max-width: 60%;
+}
+
+.practiceCardContainer {
+  padding-left: 1rem;
+}
+
+.layoutcard > h2 {
+  white-space: nowrap; /* max-width: 100%; */
+}
+
+.team_casing {
+  display: flex;
+  min-height: 60vh;
+  padding: 0rem 4rem 0rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teamIntro {
+  max-width: 27%;
+  /* border: 1px solid red; */
+}
+
+.teamcard_container {
+  padding-left: 5rem;
+}
+
+.publicationsContainer {
+  /* min-height: 60vh; */
+  min-height: 15vh;
+  background-color: var(--primary50);
+  color: #ffffff;
+  /* margin-bottom: 4rem; */
+  padding: 4rem;
+}
+
+.intropublicationsContainer {
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.intropublicationsContainer > h1 {
+  font-weight: 400;
+  font-size: var(--fontsize_large);
+  margin-left: 2.7rem;
+  /* border: 1px solid black; */
+}
+
+.intropublicationsContainer div {
+  flex: 0 1 240px;
+}
+
+.publication_mobilebutton {
+  display: none !important;
+}
+
+.publication_button,
+.publication_mobilebutton {
+  color: #950019 !important;
+  background-color: #ffffff !important;
+  /* border: 1px solid #ffffff !important; */
+}
+
+.footer {
+  background: white;
+  height: fit-content;
+  color: #ffffff;
+}
+
+.footer > h4 {
+  display: none;
+}
+
+.footer_content {
+  color: #ffffff;
+}
+
+.footer > section > div > h1 {
+  color: #950019;
+}
+
+.footer > section > div > ul > li {
+  color: #666666;
+}
+
+.footer > section:nth-child(3) {
+  /* border: 1px solid black; */
+  border-top: 2px solid #979797;
+  color: #666666;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .cardLink {
+    width: 50%;
+  }
+
+  .overviewContainer {
+    padding: 2rem 3rem 3rem 4rem;
+    min-height: 65vh;
+    gap: 2rem;
+  }
+  .overviewIntro {
+    flex: 2;
+    max-width: 35%;
+  }
+  .practiceIntro {
+    max-width: 35%;
+  }
+  .practice_container {
+    padding: 2rem 3rem 3rem 4rem;
+    min-height: 65vh;
+  }
+  .team_casing {
+    padding: 2rem 2rem 3rem 4rem;
+    min-height: 65vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .teamIntro {
+    max-width: 35%;
+  }
+  .publicationsContainer {
+    /* min-height: 65vh; */
+    padding: 3rem;
+  }
+  .intropublicationsContainer h1 {
+    margin-left: 0rem;
+    font-size: var(--fontsize_headingLaptop);
+  }
+}
+
+/* media query for tablets sizes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .teamcard_container {
+    padding-left: 3rem;
+  }
+
+  .cardLink {
+    display: block;
+    width: 85%;
+  }
+  .overviewContainer {
+    padding: 3rem 3rem 3rem 5rem;
+  }
+  .viewCase {
+    max-width: 45%;
+  }
+
+  .practice_container {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+  .practiceIntro {
+    max-width: 32%;
+  }
+
+  .team_casing {
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 1rem;
+    /* padding-right: 20px; */
+    /* gap: 1rem; */
+  }
+  .teamIntro {
+    max-width: 89%;
+    /* border: 1px solid red; */
+  }
+  .publicationsContainer {
+    padding: 4.2rem;
+    /* margin-right: 3rem; */
+  }
+
+  .intropublicationsContainer > h1 {
+    font-size: 4rem;
+    margin-left: 0rem;
+  }
+  .intropublicationsContainer div {
+    /* border: 1px solid red; */
+    flex: 0 1 140px;
+  }
+}
+
+/* media query for small screen devices */
+@media screen and (max-width: 768px) {
+  .teamcard_container {
+    padding-left: 1rem;
+  }
+
+  .cardLink {
+    display: block;
+    width: 85%;
+  }
+  .overview_cards {
+    display: none;
+  }
+  .overviewContainer {
+    padding: 0rem 1rem 1rem 1.5rem;
+    flex-direction: column;
+  }
+  .overviewIntro {
+    flex: 2;
+    max-width: 100%;
+  }
+
+  .viewCase {
+    max-width: 100%;
+    margin: 1rem;
+  }
+  .practiceCardContainer {
+    padding-left: 0rem;
+  }
+  .practice_container {
+    padding: 1rem;
+    padding-left: 1.5rem;
+    flex-direction: column;
+  }
+  .practice_cards {
+    margin: 0rem;
+    display: flex;
+    max-width: 100%;
+    margin-top: -1rem;
+  }
+  .practiceIntro {
+    flex: 2;
+    max-width: 100%;
+  }
+  .team_casing {
+    flex-direction: column;
+    padding: 0rem 1rem 1rem 1.5rem;
+    align-items: center;
+  }
+  .teamIntro {
+    max-width: 100%;
+    /* border: 1px solid red; */
+  }
+  .publicationsContainer {
+    margin-bottom: 0rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .intropublicationsContainer {
+    margin-bottom: 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intropublicationsContainer > h1 {
+    font-size: var(--fontsize_teamsubHeading);
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .intropublicationsContainer div {
+    /* border: 1px solid red; */
+    flex: 0 0 0px;
+    order: 3;
+  }
+  .publication_button {
+    display: none !important;
+  }
+  .publication_mobilebutton {
+    display: block !important;
+    padding-left: 1rem;
+    margin-top: 4.5rem !important;
+  }
+  /* .publicationslider {
+    border: 1px solid black;
+  } */
+
+  .footer {
+    bottom: 0%;
+  }
+}

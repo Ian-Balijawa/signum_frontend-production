@@ -1,0 +1,77 @@
+.cardContainer {
+  /* width: 464px; */
+  background-color: #950019;
+  color: #ffffff;
+  padding: 3rem;
+  z-index: 100;
+}
+
+.cardContainer h2 {
+  font-size: var(--fontsize_contactHeading);
+  font-family: 'Museo Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  /* text-align: center; */
+}
+
+.cardContainer p {
+  font-size: var(--fontsize_about_text);
+  font-family: 'Museo Sans', sans-serif;
+  font-weight: 600;
+  /* line-height: 65px; */
+  /* text-align: center; */
+  padding-top: 2rem;
+  margin: 0px;
+}
+
+/* .cardContainer p > a {
+  border: 1px solid black;
+} */
+
+.icon {
+  margin-bottom: -0.3rem;
+}
+
+.socialmedia_iconscasing {
+  display: flex;
+  padding-top: 3rem;
+  /* padding-left: 4rem; */
+  /* margin: 2rem; */
+}
+.socialmedia_icon {
+  font-size: 25px;
+  margin-right: 1.2rem;
+}
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+  .socialmedia_iconscasing {
+    /* padding-left: 1rem; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    width: 354px;
+    /* height: 500px; */
+    margin: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    /* display: none; */
+  }
+  .cardContainer h2 {
+    margin-bottom: 0rem;
+  }
+  .cardContainer p {
+    font-size: var(--fontsize_small);
+    padding-top: 2rem;
+  }
+  .socialmedia_iconscasing {
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    margin: 1rem;
+  }
+  .socialmedia_icon {
+    font-size: 20px;
+  }
+}

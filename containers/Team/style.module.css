@@ -1,0 +1,240 @@
+.teamMemberContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 1rem 4rem 0rem 5rem;
+  /* border: 2px solid black; */
+  background-color: #950019;
+}
+
+.memberHeading {
+  flex: 1;
+  color: #ffffff;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.memberHeading h2 {
+  font-size: var(--fontsize_subHeading);
+  border-top: 7px solid rgba(227, 227, 227, 0.88);
+  width: 90%;
+}
+
+.memberPosition {
+  font-size: var(--fontsize_teamsubHeading);
+}
+
+.contactRow {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.downloadContactRow {
+  display: flex;
+
+  margin-right: 15px;
+  align-items: center;
+}
+
+/* .downloadContactRow button {
+  margin-left: 12px;
+} */
+
+/* .contactRow button {
+  padding: 0.45rem;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer; 
+}
+*/
+.contactRowContent {
+  padding-left: 8px;
+  text-align: left;
+}
+
+.memberHeading p {
+  font-size: 1.5rem;
+  color: #dbc9cb;
+}
+
+.imageWrapper {
+  /* border: 2px solid black; */
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 1rem 3rem 4rem 3rem;
+}
+
+.content {
+  max-width: 56%;
+  font-size: 1.25rem;
+  flex: 1;
+  padding-left: 2rem;
+  min-height: 20rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.bio {
+  flex: 2;
+  max-width: 28%;
+  font-size: var(--fontsize_small);
+  /* border: 1px solid blue; */
+}
+
+.bio h4 {
+  color: #950019;
+  font-size: var(--fontsize_publication_text);
+  margin-bottom: 1rem;
+}
+
+.bio p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  /* padding-right: 2.5rem; */
+}
+
+.bio > hr {
+  border: 1px solid #950019;
+  margin-bottom: 0.4rem;
+  max-width: 90%;
+}
+
+.nextPage h2 {
+  font-size: var(--fontsize_large);
+  line-height: -20px;
+  padding: 0rem;
+  letter-spacing: -0.035em;
+}
+
+.nextPage h2:first-child {
+  margin-bottom: 0px;
+}
+
+/* media query for laptops */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .teamMemberContainer {
+    padding: 1rem 3rem 1rem 5rem;
+  }
+  .profileContainer {
+    padding: 3rem 3rem 4rem 3rem;
+  }
+  .memberHeading {
+    padding-top: 1rem;
+  }
+
+  .memberHeading h2 {
+    font-size: 2.5rem;
+    border-top: 7px solid rgba(227, 227, 227, 0.88);
+    width: 70%;
+  }
+  .memberPosition {
+    font-size: 2rem;
+  }
+  .imageWrapper img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.tabList {
+  padding-top: 1rem;
+}
+
+.experienceContainer {
+  padding: 3rem 5rem;
+  padding-bottom: 6rem;
+}
+
+/* media query for tablets */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .imageWrapper img {
+    width: 350px;
+    height: 350px;
+  }
+  .memberHeading h2 {
+    font-size: 2.5rem;
+    border-top: 7px solid rgba(227, 227, 227, 0.88);
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experienceContainer {
+    padding: 1rem 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .teamMemberContainer {
+    flex-direction: column-reverse;
+    padding: 0rem 0rem 0rem 0rem;
+    overflow: hidden;
+  }
+  .profileContainer {
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0rem;
+  }
+  .imageWrapper {
+    position: relative;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    padding: 0rem;
+  }
+
+  .imageWrapper img {
+    width: 370px;
+    height: 330px;
+  }
+
+  .memberHeading {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .memberHeading h2 {
+    font-size: 2.2rem;
+    border: none;
+    width: 100%;
+  }
+  .memberHeading p {
+    font-size: 1.3rem;
+  }
+
+  .memberPosition {
+    font-size: 1.8rem;
+    /* text-align: center; */
+    margin-left: 0rem;
+  }
+  .content {
+    margin: 1rem;
+    max-width: 100%;
+    font-size: 1.1rem;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .bio {
+    margin: 2rem;
+    max-width: 80%;
+    padding: 0rem;
+  }
+
+  .bio article {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+  .contactRow {
+    align-items: center;
+  }
+}

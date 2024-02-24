@@ -1,0 +1,19 @@
+.largeScreen {
+  display: block;
+  display: flex;
+  overflow-x: auto;
+}
+
+.smallScreen {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .smallScreen {
+    display: none;
+  }
+
+  /* .largeScreen {
+    display: none;
+  } */
+}

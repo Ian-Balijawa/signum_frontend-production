@@ -1,0 +1,42 @@
+.cardGrid {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  height: 65vh;
+}
+
+.cardGridCol {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  min-height: 35rem;
+  position: relative;
+  overflow: auto;
+}
+
+.cardImage {
+  margin: 1rem;
+  animation: move-up 10s linear infinite;
+}
+
+.cardUp {
+  transform: translateY(30);
+}
+
+.cardDown {
+  /* transform: translateX(-100); */
+}
+
+.centerBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  min-height: 400px;
+  background-color: #666666;
+  z-index: -1;
+  opacity: 0.2;
+}

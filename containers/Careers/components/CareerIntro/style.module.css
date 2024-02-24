@@ -1,0 +1,55 @@
+.careerContainer article {
+  text-align: center;
+}
+
+.careerContainer article h1 {
+  font-size: var(--fontsize_Largest);
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: var(--fontweight_bolder);
+  filter: grayscale(100%);
+  /* background-image: url('https://res.cloudinary.com/devs4devs/image/upload/v1684579256/team-member-images/alk487ixshkcadbnd0dz.svg'),
+    url('https://res.cloudinary.com/devs4devs/image/upload/v1684579372/team-member-images/h4hli4mj5lhqm0oxxz79.svg'),
+    url('https://res.cloudinary.com/devs4devs/image/upload/v1684579463/team-member-images/zwe1vthnk3bnwxkdkfvh.svg'),
+    url('https://res.cloudinary.com/devs4devs/image/upload/v1684579526/team-member-images/l35t3c4nghbsjtknys92.svg');
+  background-repeat: no-repeat;
+  background-position: 0% 50%, 25% 50%, 50% 50%, 75% 50%; */
+  background-size: auto 100%; /* Adjust the size as needed */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.careerContainer article p {
+  font-size: var(--fontsize_about_text);
+  font-weight: 550;
+  max-width: 48%;
+  letter-spacing: -0.025em;
+  color: #848484;
+  text-align: center !important;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+}
+
+/* media query for tablets sizes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .careerContainer article h1 {
+    font-size: 10rem;
+  }
+  .careerContainer article p {
+    max-width: 68%;
+    margin: 0 auto;
+    margin-top: 0rem;
+  }
+}
+
+/* media query for laptops sizes */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .careerContainer article h1 {
+    font-size: 11rem;
+  }
+  .careerContainer article p {
+    margin-top: -1rem;
+    max-width: 65%;
+  }
+}

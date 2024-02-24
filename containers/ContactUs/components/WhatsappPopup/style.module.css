@@ -1,0 +1,19 @@
+.container {
+  position: fixed;
+  right: 20px;
+  bottom: 0px;
+  z-index: 1000;
+
+  padding: 5px;
+}
+
+.text {
+  color: #1c8721;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    transform: scale(0.85);
+  }
+}

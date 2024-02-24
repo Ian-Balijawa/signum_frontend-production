@@ -1,0 +1,132 @@
+.publicationContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 5rem 1rem 5rem;
+}
+
+.bigcard {
+  max-width: 75%;
+  /* padding-left: 3rem; */
+}
+
+.bigcard div article h4 {
+  line-height: 35px;
+}
+
+.bigcard > div article span {
+  padding-left: 0rem;
+  /* margin-top: 0.6rem; */
+  /* border: 1px solid blue; */
+}
+
+.bigcard div p:nth-child(4) {
+  /* border: 1px solid red; */
+  font-size: 1.1rem;
+  line-height: 25px;
+  font-family: "Museo Sans", sans-serif;
+  color: #666666;
+  font-weight: 600;
+}
+
+.bigcardContainer {
+  flex: 2;
+}
+
+.bigcardContainer h2 {
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.smallcardContainer {
+  flex: 1;
+  /* margin-bottom: 1.8rem; */
+}
+
+.smallcard {
+  max-width: 100%;
+  color: #000000;
+  padding-left: 1.2rem;
+  /* border: 1px solid green; */
+}
+
+.smallcard > div hr {
+  margin-top: 0.4rem;
+}
+
+.smallcard div p:nth-child(3) {
+  display: none;
+}
+.smallcard > div article span {
+  font-family: "Museo Sans", sans-serif;
+  font-weight: 600;
+}
+
+.smallcard div p:nth-child(4) {
+  font-size: 1.3rem;
+  font-family: "Museo Sans", sans-serif;
+  font-weight: 600;
+}
+
+.bigcardContainer h2,
+.smallcardContainer h2 {
+  font-family: "Museo Sans", sans-serif;
+  font-weight: 600;
+  color: #950019;
+  font-size: 2.3rem;
+}
+
+.smallcardContainer h2 {
+  margin-left: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+/* media query for laptop sizes */
+@media screen and (min-width: 992px) and (max-width: 1360px) {
+  .smallcard {
+    padding: 0rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .publicationContainer {
+    flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .bigcard {
+    max-width: 100%;
+    margin-left: 0rem;
+  }
+  .bigcard > div article span {
+    padding-left: 0rem;
+    /* margin-top: -1.75rem; */
+    position: absolute;
+    left: 60.5%;
+  }
+  .bigcardContainer {
+    /* border: 1px solid blue; */
+    padding-left: 0rem;
+  }
+  .bigcardContainer h2 {
+    padding-left: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+  }
+
+  .smallcard {
+    padding-left: 0rem;
+  }
+  .smallcardContainer {
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+  }
+  .smallcardContainer h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .smallcard > div article span {
+    /* border: 1px solid red; */
+    margin-top: 0.58rem;
+  }
+}

@@ -1,0 +1,48 @@
+.card_container {
+  /* border: 1px solid blue; */
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+  flex: 6;
+  min-width: 45%;
+  margin-top: 2rem;
+  /* margin-left: 4rem; */
+}
+
+.card_container > h2 > span {
+  font-weight: 400;
+  font-size: 27px;
+  color: #950019;
+}
+
+.card_container > h2 {
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+.card_container > p {
+  font-size: 1rem;
+  line-height: 35px;
+  color: #676767;
+}
+
+.card_container > p:hover {
+  color: #950019;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .card_container {
+    min-width: 100%;
+    /* margin: 3rem; */
+  }
+}
+
+@media screen and (max-wdith: 768px) {
+  .card_container {
+    padding-right: 0rem;
+    min-width: 100%;
+    margin: 0rem;
+  }
+  .card_container > h2 {
+    text-align: center;
+  }
+}

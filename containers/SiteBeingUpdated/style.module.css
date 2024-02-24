@@ -1,0 +1,152 @@
+.big_container {
+  position: relative;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 48px;
+  color: #9da4b7;
+}
+
+.container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.foreground {
+  position: relative;
+  z-index: 5;
+}
+
+/* .background {
+  z-index: 2;
+} */
+
+.container > h2 {
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 57px;
+  text-align: center;
+  color: #950019;
+}
+.container > p {
+  font-family: 'Museo Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.container > p:nth-child(3) {
+  margin-bottom: 4rem;
+}
+
+.image_logo {
+  height: 125px;
+  width: 207px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 40%;
+  /* padding: 40px; */
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.form > input {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.footer {
+  margin-top: 4rem;
+}
+
+.footer > p {
+  font-family: 'Museo Sans';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+}
+
+.anchor {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #950019;
+  color: white;
+  border: 1px solid #950019;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: Mulish;
+  text-decoration: none;
+}
+
+.imageContainer {
+  position: fixed;
+  right: 0px;
+  bottom: 0;
+  z-index: -1;
+  text-align: right;
+  opacity: 0.6;
+}
+
+.imageBottom {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: -3px;
+  z-index: -1;
+  top: 0px;
+  opacity: 0.8;
+}
+
+.buriText {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.imageInContainer {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 5rem;
+  }
+  .container > h2 {
+    font-size: 39px;
+  }
+  .container > p {
+    font-size: 19px;
+  }
+  .container > p:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+  .image_logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .form {
+    width: 90%;
+  }
+  .footer {
+    margin-top: 5rem;
+  }
+  .footer > p {
+    font-size: 19px;
+  }
+}

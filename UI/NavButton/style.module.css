@@ -1,0 +1,37 @@
+.button {
+  background-color: #950019;
+  color: #ffffff;
+  padding-right: 10px;
+  font-weight: 500;
+  width: 155px;
+  height: 4.2vh;
+  position: relative;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* line-height: 45px; */
+}
+.icon {
+  margin-left: 5px;
+  margin-bottom: 0rem;
+  /* border: 1px solid black; */
+}
+/* media queries for phones */
+@media screen and (max-width: 768px) {
+  .button {
+    margin-left: 4rem;
+    height: 5vh;
+  }
+}
+
+/* media queries for laptops */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .button {
+    height: 6.4vh !important;
+  }
+}
+
+/* media queries for tablets */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+}

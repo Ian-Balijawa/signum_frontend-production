@@ -1,0 +1,107 @@
+.outerContainer {
+  padding: 3rem;
+  font-family: "Museo Sans", sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Set initial box-shadow */
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.headingContainer > article > h4 {
+  font-size: var(--fontsize_publication_title);
+}
+
+.innerContainer article {
+  display: flex;
+}
+
+.innerContainer > article > span {
+  padding-left: 6rem;
+  opacity: 0.6;
+  font-size: var(--fontsize_small);
+}
+
+.innerContainer > hr {
+  max-width: 90%;
+  margin-top: 0.5rem;
+  color: "#555555";
+  opacity: 0.6;
+}
+.headingContainer {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.headingContainer article:nth-child(2) {
+  flex: 0 0 170px;
+  margin-top: 0.35rem;
+  /* border: 1px solid blue; */
+}
+
+.text {
+  font-weight: 400;
+  font-size: var(--fontsize_medium);
+  padding-right: 4rem;
+  letter-spacing: 0.025rem;
+}
+
+.subHeading {
+  font-family: "Museo Sans", sans-serif;
+  font-size: var(--fontsize_medium);
+  line-height: 28px;
+  color: #555555;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.outerContainer:hover {
+  /* transform: scale(1.1); */
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* On hover, transition to a larger box-shadow */
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+/* media query for laptop sizes */
+@media screen and (min-width: 1024px) and (max-width: 1360px) {
+  .outerContainer {
+    padding: 1rem;
+    margin: 0px;
+  }
+  .text {
+    padding-right: 0;
+    font-size: var(--fontsize_publication_title);
+  }
+  .innerContainer > hr {
+    max-width: 100%;
+  }
+
+  .headingContainer article:nth-child(2) {
+    flex: 0 0 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outerContainer {
+    margin-left: 0rem;
+    padding: 1rem;
+  }
+  .headingContainer article:nth-child(2) {
+    font-size: 0.8rem;
+    flex: 0 0 105px;
+    margin-top: 0.5rem;
+  }
+  .text {
+    padding-right: 0rem;
+    font-size: var(--fontsize_text);
+  }
+  .innerContainer article {
+    flex-direction: column;
+  }
+  .innerContainer > hr {
+    max-width: 100%;
+  }
+  .innerContainer > article > span {
+    padding-left: 0rem;
+  }
+}
